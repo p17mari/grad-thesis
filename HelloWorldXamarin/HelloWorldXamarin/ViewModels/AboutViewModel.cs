@@ -9,7 +9,7 @@ namespace HelloWorldXamarin.ViewModels
     {
         public AboutViewModel()
         {
-            Title = "About";
+            Title = "About"; //comment
             OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
         }
 
