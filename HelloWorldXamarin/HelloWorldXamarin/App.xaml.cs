@@ -7,12 +7,12 @@ using Xamarin.Forms.Xaml;
 using System.IO;
 
 
-//namespace HelloWorldXamarin { 
-namespace  Teacher //HelloWorldXamarin
+namespace HelloWorldXamarin
+//namespace  Teacher //HelloWorldXamarin //this causes problems
 {
     public partial class App : Application
     {
-       /* private static Database database;
+        private static Database database;
 
         public static Database Database
         {
@@ -24,7 +24,7 @@ namespace  Teacher //HelloWorldXamarin
                 }
                 return database;
             }
-        }*/
+        }
         public App()
         {
            InitializeComponent();
@@ -33,11 +33,11 @@ namespace  Teacher //HelloWorldXamarin
             MainPage = new AppShell();
         }
 
-        private void InitializeComponent()
+       /* private void InitializeComponent()
         {
-            throw new NotImplementedException(); // this method is not in default
-        }
-        
+            throw new NotImplementedException(); // this method is not in default //this is the problem child
+        }*/
+       
         protected override void OnStart()
         {
         }
